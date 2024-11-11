@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/webwalacoder/fem-blog-preview-card-challenge/tree/main)
+- Live Site URL: [Add live site URL here](https://webwalacoder.github.io/fem-blog-preview-card-challenge/)
 
 ## My process
 
