@@ -1,0 +1,132 @@
+/* MOBILE FIRST DESIGN */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+
+    /* FONTS */
+    --blog-font-family: 'Figtree', sans-serif;
+}
+
+body {
+    background-color: var(--yellow);
+    color: var(--gray-950);
+    font-family: var(--blog-font-family);
+    font-weight: 500;
+    font-size: 0.875rem;
+    height: 100vh;
+    line-height: 1.5;
+
+    display: grid;
+    place-content: center;
+}
+
+.blog {
+    background-color: var(--white);
+    border: 1px solid var(--gray-950);
+    box-shadow: 8px 8px var(--gray-950);
+    border-radius: 20px;
+    width: 327px;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.blog-image {
+    border-radius: 10px;
+}
+
+.blog-category {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.blog-category-learning {
+    background-color: var(--yellow);
+    padding: 4px 12px 4px 12px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    border-radius: 4px;
+}
+
+.blog-publish-date {
+    font-size: 0.75rem;
+}
+
+.blog-title {
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin: 12px 0;
+}
+
+.blog-title-link {
+    color: var(--gray-950);
+    text-decoration: none;
+}
+
+.blog-paragraph {
+    color: var(--gray-500);
+}
+
+.blog-writer-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.writer-avatar {
+    width: 32px;
+    height: 32px;
+}
+
+.writer-name {
+    font-weight: 800;
+    font-size: 0.875rem;
+}
+
+/* FOR DESKTOP SCREEN */
+@media screen and (min-width: 376px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .blog {
+        width: 384px;
+    }
+
+    .block-category {
+        margin-bottom: 16px;
+    }
+
+    .blog-category-learning {
+        font-size: 0.875rem;
+    }
+
+    .blog-publish-date {
+        font-size: 0.875rem;
+    }
+
+    .blog-title {
+        font-size: 1.5rem;
+        margin: 16px 0;
+    }
+
+    .blog-title-link:hover, .blog-title-link:focus {
+        cursor: pointer;
+        color: var(--yellow);
+    }
+}
